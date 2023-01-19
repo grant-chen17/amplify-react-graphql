@@ -40,7 +40,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifygraphql-dev-112645-deployment/amplify-cfn-templates/auth/amplifygraphqldc3661de-cloudformation-template.json",
         "logicalId": "authamplifygraphqldc3661de"
       },
-      "lastPushTimeStamp": "2023-01-18T19:58:03.657Z",
+      "lastPushTimeStamp": "2023-01-19T00:13:45.546Z",
       "output": {
         "UserPoolId": "us-west-2_5lSwFe1nB",
         "AppClientIDWeb": "52kcq4sgb55c5nv0c7vp0g0jka",
@@ -51,6 +51,50 @@
         "UserPoolName": "amplifygraphqldc3661de_userpool_dc3661de"
       },
       "lastPushDirHash": "24d48JJkd9U5IWqEFBmGQ1voQ94="
+    }
+  },
+  "api": {
+    "amplifygraphql": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "hql6fpudavcupbqtuut3qtkgka",
+        "GraphQLAPIEndpointOutput": "https://szj7dq5t3fenlapstm7zi4fx4m.appsync-api.us-west-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-nklmtml6pfdx7kmsrrpw7rv7si"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifygraphql-dev-112645-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiamplifygraphql"
+      },
+      "lastPushTimeStamp": "2023-01-19T00:13:47.955Z",
+      "lastPushDirHash": "apZ2qbHUmoHTDdK7PATB7gsFpE4="
+    }
+  },
+  "storage": {
+    "imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2023-01-19T00:13:47.955Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifygraphql-dev-112645-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageimagestorage"
+      },
+      "output": {
+        "BucketName": "mybucket112645-dev",
+        "Region": "us-west-2"
+      },
+      "lastPushDirHash": "ocX7fzd24jwMssqFVboR4qtsIm4="
     }
   }
 }
